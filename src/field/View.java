@@ -7,9 +7,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import cell.Cell;
-import oracle.jrockit.jfr.JFR;
 
 public class View extends JPanel{
+	
 	
 	private static final int GRID_SIZE = 16;
 	private Field theField;
@@ -38,7 +38,7 @@ public class View extends JPanel{
 	}
 	
 	public static void main(String[] args) {
-		Field field = new Field(10, 10);
+		Field field = new Field(20, 20);
 		for 	(int row = 0; row < field.getHeight(); row++) {
 			for (int col = 0; col < field.getWidth(); col++) {
 				field.place(row, col, new Cell());

@@ -1,10 +1,12 @@
 package field;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.xml.bind.annotation.XmlElementDecl.GLOBAL;
 
 import cell.Cell;
 
@@ -22,6 +24,7 @@ public class View extends JPanel{
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
+		g.setColor(Color.GREEN);
 		for (int row = 0; row < theField.getHeight(); row++) {
 			for (int col = 0; col < theField.getWidth(); col++) {
 				Cell cell = theField.get(row, col);
